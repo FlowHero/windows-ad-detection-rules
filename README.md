@@ -49,6 +49,3 @@ Production-ready LogPoint rules with alert thresholds and honeypot detection pat
 - Splunk queries use Sysmon and SilkETW where available
 - Adjust field names, thresholds, and `norm_id` values to match your environment
 
-## Author
-
-[FlowHero](https://flowhero.github.io) — HackTheBox CDSA

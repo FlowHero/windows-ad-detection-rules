@@ -8,19 +8,19 @@
 
 ## Table of Contents
 
-- [[#Kerberoasting|Kerberoasting]]
-- [[#AS-REProasting|AS-REProasting]]
-- [[#GPP Passwords|GPP Passwords]]
-- [[#GPO Permissions / GPO Files|GPO Permissions / GPO Files]]
-- [[#Credentials in Shares|Credentials in Shares]]
-- [[#Credentials in Object Properties|Credentials in Object Properties]]
-- [[#DCSync|DCSync]]
-- [[#Golden Ticket|Golden Ticket]]
-- [[#Kerberos Constrained Delegation|Kerberos Constrained Delegation]]
-- [[#PrinterBug & NTLM Relaying|PrinterBug & NTLM Relaying]]
-- [[#Coercing Attacks & Unconstrained Delegation|Coercing Attacks & Unconstrained Delegation]]
-- [[#Object ACL Abuse|Object ACL Abuse]]
-- [[#ESC1 — ADCS Misconfiguration|ESC1 — ADCS Misconfiguration]]
+- [Kerberoasting](#kerberoasting)
+- [AS-REProasting](#as-reproasting)
+- [GPP Passwords](#gpp-passwords)
+- [GPO Permissions / GPO Files](#gpo-permissions--gpo-files)
+- [Credentials in Shares](#credentials-in-shares)
+- [Credentials in Object Properties](#credentials-in-object-properties)
+- [DCSync](#dcsync)
+- [Golden Ticket](#golden-ticket)
+- [Kerberos Constrained Delegation](#kerberos-constrained-delegation)
+- [PrinterBug & NTLM Relaying](#printerbug--ntlm-relaying)
+- [Coercing Attacks & Unconstrained Delegation](#coercing-attacks--unconstrained-delegation)
+- [Object ACL Abuse](#object-acl-abuse)
+- [ESC1 — ADCS Misconfiguration](#esc1--adcs-misconfiguration)
 
 ---
 

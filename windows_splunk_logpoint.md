@@ -1,49 +1,20 @@
 # Windows Attack Detection — Splunk & LogPoint Queries
 
 
-- [[#1. User/Domain Recon|1. User/Domain Recon]]
-	- [[#1. User/Domain Recon#Splunk|Splunk]]
-	- [[#1. User/Domain Recon#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#2. Password Spraying|2. Password Spraying]]
-	- [[#2. Password Spraying#Splunk|Splunk]]
-	- [[#2. Password Spraying#LogPoint|LogPoint]]
-- [[#3. LLMNR/NBT-NS Poisoning|3. LLMNR/NBT-NS Poisoning]]
-	- [[#3. LLMNR/NBT-NS Poisoning#Splunk|Splunk]]
-	- [[#3. LLMNR/NBT-NS Poisoning#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-	- [[#3. LLMNR/NBT-NS Poisoning#Suricata|Suricata]]
-- [[#4. Kerberoasting|4. Kerberoasting]]
-	- [[#4. Kerberoasting#Splunk|Splunk]]
-	- [[#4. Kerberoasting#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#5. AS-REPRoasting|5. AS-REPRoasting]]
-	- [[#5. AS-REPRoasting#Splunk|Splunk]]
-	- [[#5. AS-REPRoasting#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#6. Pass-the-Hash|6. Pass-the-Hash]]
-	- [[#6. Pass-the-Hash#Splunk|Splunk]]
-	- [[#6. Pass-the-Hash#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#7. Pass-the-Ticket|7. Pass-the-Ticket]]
-	- [[#7. Pass-the-Ticket#Splunk|Splunk]]
-	- [[#7. Pass-the-Ticket#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#8. Overpass-the-Hash|8. Overpass-the-Hash]]
-	- [[#8. Overpass-the-Hash#Splunk|Splunk]]
-	- [[#8. Overpass-the-Hash#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#9. Golden Ticket|9. Golden Ticket]]
-	- [[#9. Golden Ticket#Splunk|Splunk]]
-	- [[#9. Golden Ticket#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#10. Silver Ticket|10. Silver Ticket]]
-	- [[#10. Silver Ticket#Splunk|Splunk]]
-	- [[#10. Silver Ticket#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#11. Unconstrained Delegation|11. Unconstrained Delegation]]
-	- [[#11. Unconstrained Delegation#Splunk|Splunk]]
-	- [[#11. Unconstrained Delegation#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#12. Constrained Delegation|12. Constrained Delegation]]
-	- [[#12. Constrained Delegation#Splunk|Splunk]]
-	- [[#12. Constrained Delegation#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#13. DCSync|13. DCSync]]
-	- [[#13. DCSync#Splunk|Splunk]]
-	- [[#13. DCSync#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
-- [[#14. DCShadow|14. DCShadow]]
-	- [[#14. DCShadow#Splunk|Splunk]]
-	- [[#14. DCShadow#LogPoint (default Windows logs only)|LogPoint (default Windows logs only)]]
+- [1. User/Domain Recon](#1-userdomain-recon)
+- [2. Password Spraying](#2-password-spraying)
+- [3. LLMNR/NBT-NS Poisoning](#3-llmnrnbt-ns-poisoning)
+- [4. Kerberoasting](#4-kerberoasting)
+- [5. AS-REPRoasting](#5-as-reproasting)
+- [6. Pass-the-Hash](#6-pass-the-hash)
+- [7. Pass-the-Ticket](#7-pass-the-ticket)
+- [8. Overpass-the-Hash](#8-overpass-the-hash)
+- [9. Golden Ticket](#9-golden-ticket)
+- [10. Silver Ticket](#10-silver-ticket)
+- [11. Unconstrained Delegation](#11-unconstrained-delegation)
+- [12. Constrained Delegation](#12-constrained-delegation)
+- [13. DCSync](#13-dcsync)
+- [14. DCShadow](#14-dcshadow)
 
 
 > **LogPoint note**: All LogPoint queries use **default Windows log sources only** — no Sysmon, no SilkETW.
